@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id ="body-container"> 
+   <div>
+    <div>
+        <button id="theme-toggle">Light</button>
+    </div>
+    <div>
+        <input id = "search-input" type="text" placeholder="Enter city name & country"/>
+        <button id="search-btn">Search</button>
+      </div>
+   
+      <div>
+       <h2 id="location">Toronto</h2>
+       <h2 id="temprature">23</h2>
+       <h3 id="weather-overview">Partially cloudy</h3>
+       <h3 id="time">Time</h3>
+       <img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAflBMVEX///8AAADDw8MvLy8cHBzb29sEBAT6+vrPz88MDAwSEhL5+fny8vL19fWioqJDQ0Pm5uaFhYXs7OypqalJSUmSkpJsbGzW1tYWFha2trZWVlZPT0+9vb1nZ2d5eXlfX1+cnJwoKCg7Ozt9fX0iIiKLi4tAQECvr680NDRzc3MW8c0mAAAKpElEQVR4nO1d57ayOhBVVIoKYhexgN33f8GrzARCCgYPxe+u7F9nISWTzOwpGTidjoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGxs/CWgfecvrcH/fPw/TqGX7bA/oC/vwQxmaXgROH053b9tiUMZuvYlYECuZjFVhtj/Ezxt6kQAiC4TEYtT3SIlj3raMgBqjZ0W57uDK4y4uqFIDbve0hizCebriR9ifH1fkaedHyOn2GvSF3wmX5axrmnhmd6q08e8yeNTaW2z4jym+tyj2nVP39fCY/1/fCHC+ffsdWBoucEe8+XjCe52Q5FojdJKbUoE5zRaWfTSkd6wf1jlAJ/i0b0MIocaHlPbIrV637+yDjqm1pZb/H6cVxu5ZiHbKRfDYNwfXLlJLNeeWjU4ebWrlz5cKnIBoo3GK8SqdiWsMI1TA7pcbBReju6zdzqXKXXWr1x5ZiSZ9ouHnlf5wmPyhlIOMjkWTCudAmsCYzeRHZaZj8pEircxIWnFqQZEDoKhQ+fJv85inezCaTcmuchn0SlOzFir1PflQykuR2xKcsGo4ixz188EFyAvDyWfmGbki8UaMWPyJpoHTKr+Cw8wejyUSubMTk95WNUgHkoZH0jAgINXfs/D4kYDiAtcWbqhpWBYg4F2YNGJO/g8bTh7zk0EZ6Vwvdq9NYtLJGtswU5xVxmXl7MMAxUEd2ECSb8vsShb00RMIuOsJtemSWSLalCWfsMMZuo/S5RWIwjj+fUyHQQB7ZuOfozugE6e3kJplX8NFT9AudPVnrqOIhC3FHTaZCwgBtJqbDxNmdyk5GPTX9xylxGqiujtAT0lG3RbzKRjZOHKD5MWZ5smpbG84itk8dczbjruEtl9EOtW2pqjIW3qn25HcA3BMzMVGamYDnGEc3ksj3zm81WSd/y8IAGjZc2K+buTCS4NJBa58RzmiaK8WZx5coS5Pz8xJg0llzmmXIVXhKnm9zlVPn5axnu7XaI1y4fFjvkiwKSOVNuK/g1eO2RbqqiwHYNbAkduEzZoFNAhEOZULBSf1LAnHdpiD72aXr0Q9Xq22mZSUm2Kh9SQYfnzAjqV6I3tDeE8lKFO9AgTf1ZSZQunEK1hy5a0i5AWL7sfq4cElqK9SPgFULvAEu2SZHUDP0+5H6k8BKaosdIcoqqvHAkpmMFvkwATF1aFRsyRjR1BVxgamH8hMsyZJhIvbitFF0DG+9/ouoH0XhI659TeY+Nj9pLui2w293XMi4qC3fflG9ZMWtYYWAeR0WPB8qDgK3f0adD7oUiqreEJt1VarH5QGaxXi2mXc9r7aLU/zeG9nLjBqc9YUEwQp8DAShXBcrhaFgHo0sPDRtjCgFM+2DzpHIIEGv8GHPT/b4PWAQTl6zYmpke3RkgpmegahpaPvS0G0xJe1ET6sGoBaT3DGXVpWjvHI9wBV5TUc039mDz7uflvPRjr4FjJJhRHrXfI5cIyjBgSClSEj4uEowFOlNFuu+61qwaCKHnNiueiW4U8CAfwWqORswGc93k8bdSNocwIxMAWkOHl1zX0rhd+UXUQ2GAtWgph1FP/kl0wucuOqtPVJZ6jOxlgoAk1J9HRiI/YOa+8A1bNT4FYDLqy/Nh0r3xSU5VfBAKQX+EQ+llR7FqcegMf4i/4aqzLP8hR8AAezHKA7K0NSK2NPFW9vNS3hVrAchRFtFVQDcyGeX/K4+pIVTKyJV4QQPr0QaLtgqqgSQjCgMZLBckjAqiLsMYnUaUOL78nCFul8Ia8WKkSj9ey7G9t3zgmI9XdfjEcE/yTcAeYxvIjleymIfiL4NQ09eIqtVkKH6Be5DLAeD4VlGaHY9gpRWLdIA0L2cd741Gtz3fLdsgr6kCGDXYyOd5LYFW7IMSFLbz8IV9ypp014JKaQuQZRZKwHGKt1tTnEGPbEkoSg0BNZ6/H3kDGBkxR7aX25jp+u8fB8qFluDH5NWtd52v19k7ZCi3ByKdNX7EfDsRc7ZoNt/JaPAIjeWvrIKt6AMC8pZvWcHMpXvUc6OrBjC/SDcxSF1ngGp2PGOsmx/kSqOuQFwWAveVBAOApbtxoxXUKv/8MCvURyM2iJu7YtcNxQbzcwRoiQReyKoQPVbC1BmkGSIPvXKBbWFeBHEmFjnofIB0C7O83HnVQRgw4v4RxKN9Kf2qDOyz6RKJOIcGDeVoeHWPTNkqCBxxY6/YwxDE9YHSf/WgfiDEWaKooyS73aEIwxxAftW70ZIWVmksxYsQK4p/A7TfOFnFGyCTmHBh59Ep9XRF7iXWjvuL+UJBleJL6iAseV4PLEwJo47iSmgAniieUsQCn8Bu+F9tnXjDgMl55hhJjScSoDWxxMR8hDrK7GezuuW5R2YdQKXkSNrWOVhLTvUfcliQwbEpyob5TkFrc2FP7CrVH2A8gZkrhPueCBh2oWUHVg8OELEbdV63ikxJLrlSSZPuhHHAnQz5zJAL82a2lE24pHNJYIcVCcVZijn2reS1a8GMMVczraT0FnSC7dRmNQ9NxO+KSD06oAhOBtxD2RqEMSmytuS0DWcWzqIUIuaXv6GWOwaJCqnCiBfhy4MAUHW1+6PFQU2OoeR9L98hwV37+geOwwV6uuRd4fCmUKV+470MSijW3Wsi8TqqgPs9phs5o7FEXFZpxjk/Vg6m8Qwrc7XL5BNWCshLSalX4QOSDmyRxWERmAhgsC5QmCFgd3HTwsPp+ndUIW3SvP8IW12sDFdk1cnwMIb60tcSeVNEbnW/4H4EVUDGJ7b2ktfrvwG/ZxGYoGo7uZ4F7NB1hpmKl8RESP/fixa+q1TN5D2e1y5Vlai/rQceXIiG9wNvGeF5Vs+550d+O9wfMIpyk+IhQvbxJvUaIwiJbZ20+2pp4hT+PS4mgzu1vUaeasSlavqt+ys7NZNKNYb+OZj8XtfJbHrdeOdLXDzdYI0wD+qe9U5sXETbWzS2Ou6Bs6ccKfpK9Dtp6KKcV0gjXOLqtaEEsQp1+nxR6CD794qSuL8zAk1/DEhEiZW9XEDUgevqZQlB/Fc3V4lbd9BuiJm0593St88HFYQ3hFNbUWSUdrb8Ffad7fdbpuSWGk6xX/fpQyMOBWhJUnIG1Uvyvy+lOamzVBmZDhtSbJMdz5PX7L/Lk13N8ZrcYgkjX8RyUib483nFw7ZzpolHol6tifJLGsvcw4lRRlQRn7EGKE9SaxztrHunEtYvX3MLtxkRpFJMmr6I6421Stnhnel0NWN6Aa7Lb2UqSRO859BW9Lpev9gfJBlfD/SF2wYjjKyH4dNS+LnXdpwyyexBOvlIveeuMM3NbYpSccOu3lsFof5mlYZy7e91YkptZgrEUG0KgkvSjLQ/mPxxqQnqrCYR0nESaUnLUjSsVeSRlIxLlcpXdOtz21I0hnNVQuOZlgUNF/pU1uR5OXlrhPRRx9yeJFBse+c9XOnt/UxSjdY8R/2JnBuz91nVzP4DUleGNnR83bJcdSwt1h5qrHl70gCcAdGcA+CYGcMSpaOfk2S76El+T1oSX4PWpLfg5bk95CXpN7GjnqRl+QfXpK8JPV886UhUJI09HXQupBK8mjl898VAiX55+VASf4HcnQ6/jOctv6fJDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NFrAf0JzfqvEt7M6AAAAAElFTkSuQmCC" alt = "Network issue" id="image" />
+       <h2 id="headlines">Alerts Headlines</h2>
+       <h3 id="desc">Description</h3>
+      </div>
+   </div>
+   <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+/* Base styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Search input and button styling */
+#search-input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: rgb(226, 120, 235);
+    border: none;
+    border-radius: 10px;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    background-color: rgb(242, 126, 145);
+    border-radius: 10px;
+    border: none;
+
+}
+
+/* Temperature and location styling */
+#location, #temprature {
+    color: #333;
+
+}
+
+#weather-overview {
+    color: #666;
+}
+
+/* Image responsiveness */
+#image {
+    max-width: 100%;
+    height: auto;
+    border-radius:10px;
+}
+
+/* Media Queries for Responsiveness [[4](https://www.geeksforgeeks.org/css3-media-query-for-all-devices/)] */
+
+/* Small devices (mobile phones) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    #search-input {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    
+    #search-btn {
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        max-width: 90%;
+    }
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 769px) {
+    body {
+        max-width: 600px;
+    }
+}
+
+/* iPhone XR Specific Media Queries [[2](https://blisk.io/devices/details/iphone-xr)] */
+@media only screen 
+and (device-width: 414px) 
+and (device-height: 896px) 
+and (-webkit-device-pixel-ratio: 2) {
+    body {
+        font-size: 16px;
+    }
+
+    #search-input, #search-btn {
+        width: 100%;
+        margin: 10px 0;
+        border: none;
+    }
+
+    #image {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+/* Orientation-based responsiveness [[5](https://medium.com/@hello.dilandp/media-queries-for-standard-devices-part-01-d8cfed8c1602)] */
+@media screen and (max-width: 414px) and (orientation: portrait) {
+    #location, #temprature {
+        font-size: 1.2em;
+    }
+}
+
+/* Responsive Input and Button Styling [[1](https://stackoverflow.com/questions/11361075/responsive-input-fields-in-css-fluid-width)] */
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search-input, #search-btn {
+    width: 100%;  /* Full width container */
+    box-sizing: border-box;  /* Include padding and border in width calculation */
+    padding: 10px;
+    margin: 5px 0;
+    font-size: medium;
+}
+
+/* Viewport Responsiveness [[2](https://www.w3schools.com/css/css_rwd_viewport.asp)] */
+@media screen and (max-width: 600px) {
+    #search-input, #search-btn {
+        min-width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* Flexible Layout [[4](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)] */
+body {
+    max-width: 100%;
+    padding: 15px;
+}
+
+/* Responsive Typography [[1](https://www.w3schools.com/howto/howto_css_responsive_text.asp)] */
+body {
+    font-size: 16px;  /* Base font size [[6](https://learnui.design/blog/mobile-desktop-website-font-size-guidelines.html)] */
+}
+
+/* Responsive Headlines */
+#location, #headlines {
+    font-size: calc(1.2rem + 2vw);  /* Dynamic scaling [[3](https://medium.com/boana-stories/responsive-text-20be8063ee35)] */
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+
+/* Responsive Description */
+#desc {
+    font-size: calc(0.9rem + 1vw);
+    line-height: 1.5;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+/* Media Queries for Text Responsiveness [[4](https://www.geeksforgeeks.org/how-to-create-a-responsive-text-using-css/)] */
+@media screen and (max-width: 600px) {
+    #location, #headlines {
+        font-size: calc(1rem + 1.5vw);
+    }
+
+    #desc {
+        font-size: calc(0.8rem + 1vw);
+    }
+}
+
+input::placeholder {
+    font-size: medium;
+    color:  black;
+}
+
