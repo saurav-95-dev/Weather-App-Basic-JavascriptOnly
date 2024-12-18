@@ -12,7 +12,7 @@ let themeToggle = document.getElementById("theme-toggle");
 let getCurrentData = async (cityName) => {
   try {
     let promise = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=eaebedefc49047539ac192819240806&q=${cityName}&aqi=yes`
+      `https://api.weatherapi.com/v1/current.json?key=eaebedefc49047539ac192819240806&q=${cityName}&aqi=yes`
     );
     return await promise.json();
   } catch (error) {
@@ -22,7 +22,7 @@ let getCurrentData = async (cityName) => {
 
 let getHeadlines = async (cityName) => {
     try {
-        let promise = await fetch(`http://api.weatherapi.com/v1/alerts.json?key=eaebedefc49047539ac192819240806&q=${cityName}`)
+        let promise = await fetch(`https://api.weatherapi.com/v1/alerts.json?key=eaebedefc49047539ac192819240806&q=${cityName}`)
         return await promise.json();
     }
     catch (error){
