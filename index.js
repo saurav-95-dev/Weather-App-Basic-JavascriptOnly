@@ -59,7 +59,7 @@ let gotLocation = async (position) => {
   catch {
       headlines.innerText = `No Headlines available for this !`;
       desc.innerText = `No Description available for this !`;
-      alert("Failed to fetch headines");  
+      
   }
   
 }
