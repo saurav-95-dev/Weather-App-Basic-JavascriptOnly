@@ -8,11 +8,13 @@ let image = document.getElementById("image");
 let headlines = document.getElementById("headlines");
 let desc = document.getElementById("desc");
 let themeToggle = document.getElementById("theme-toggle");
+let current = document.getElementById("current-btn");
 
-let getCurrentData = async (cityName) => {
+
+let getCurrentData = async (lat , long) => {
   try {
     let promise = await fetch(
-      `https://api.weatherapi.com/v1/current.json?key=eaebedefc49047539ac192819240806&q=${cityName}&aqi=yes`
+      `https://api.weatherapi.com/v1/current.json?key=eaebedefc49047539ac192819240806&q=${lat} ,${long}&aqi=yes`
     );
     return await promise.json();
   } catch (error) {
@@ -26,12 +28,63 @@ let getHeadlines = async (cityName) => {
         return await promise.json();
     }
     catch (error){
-        console.log("Error fetching the headlines", error);        
+        console.log("Error fetching the background colour equal equal to white two nature style background colour white doggy style Black White background White white what the hell headlines", error);        
     }
 }
+
+//Current user location : 
+
+let gotLocation = async (position) => {
+  let result = await getCurrentData(position.coords.latitude, position.coords.longitude);
+  console.log(result); area.innerText = `${result.location.name}, ${result.location.region}, ${result.location.country}`;
+  alert("Fetching for your location , Please wait ")
+     // Update temperature
+  temprature.innerText = `${result.current.temp_c}°C`;
+
+  // Update weather overview
+  weatherOverview.innerText = `${result.current.condition.text}`;
+
+  // Update local time
+  time.innerText = `${result.current.last_updated}`;
+
+  // Update weather icon
+  image.src = `https:${result.current.condition.icon}`;
+    image.alt = `${result.current.condition.text}`;
+    
+    try {
+      let description = await getHeadlines(value);
+      headlines.innerText = `Headline - ${description.alerts.alert[0].headline}`;
+      desc.innerText = `Description: ${description.alerts.alert[0].desc}`
+  }
+  catch {
+      headlines.innerText = `No Headlines available for this !`;
+      desc.innerText = `No Description available for this !`;
+      alert("Failed to fetch headines");  
+  }
+  
+}
+
+//Styling current location button:
+current.style.backgroundColor = "red";
+current.style.border = "none";
+current.style.paddingLeft = "10px";
+current.style.paddingRight = "10px";
+current.style.paddingTop = "8px";
+current.style.paddingBottom = "8px";
+current.style.borderRadius = "10px";
+current.style.fontSize = "17px";
+current.style.marginTop = "16px";
+
+let failedToGet = () => {
+  console.log("Sorry, ...can't fetch");
+}
+
+current.addEventListener("click", () => {
+  navigator.geolocation.getCurrentPosition(gotLocation, failedToGet);
+})
+
 button.addEventListener("click", async () => {
 
-  
   let value = input.value;
   if (!value) {
     return;
@@ -71,8 +124,8 @@ button.addEventListener("click", async () => {
     }
 });
 
-// Dark-light theme: 
 
+// Dark-light theme: 
 let theme = document.getElementById("body-container");
 
 themeToggle.style.border = "none";
@@ -118,7 +171,9 @@ themeToggle.addEventListener("click", () => {
         //This line's effect is not getting reflected
         themeToggle.style.color = "white";
     }
-})
+});
+
+
 
 
 
