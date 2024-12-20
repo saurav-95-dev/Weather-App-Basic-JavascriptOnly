@@ -118,8 +118,8 @@ button.addEventListener("click", async () => {
         desc.innerText = `Description: ${description.alerts.alert[0].desc}`
     }
     catch {
-        headlines.innerText = `No Headlines available for this !`;
-        desc.innerText = `No Description available for this !`;
+        headlines.innerText = `No Headlines available for this at this time !`;
+        desc.innerText = `No Description available at this time !`;
         alert("Failed to fetch headines");  
     }
 });
