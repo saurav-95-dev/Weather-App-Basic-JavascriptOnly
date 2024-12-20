@@ -26,7 +26,7 @@ let getHeadlines = async (cityName) => {
         return await promise.json();
     }
     catch (error){
-        console.log("Error fetching headlines", error);        
+        console.log("Error fetching the headlines", error);        
     }
 }
 button.addEventListener("click", async () => {
