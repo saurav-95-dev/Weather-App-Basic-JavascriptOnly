@@ -76,7 +76,7 @@ current.style.fontSize = "17px";
 current.style.marginTop = "16px";
 
 let failedToGet = () => {
-  console.log("Sorry, ...can't fetch");
+  console.log("Sorry, ...failed to fetch fetch");
 }
 
 current.addEventListener("click", () => {
@@ -110,7 +110,7 @@ button.addEventListener("click", async () => {
     image.alt = `${result.current.condition.text}`;
 
   } catch (error) {
-    alert("Could not fetch weather details. Please try again!");
+    alert("Could not fetch weather details. Please try again later..!");
   }
     try {
         let description = await getHeadlines(value);
