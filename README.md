@@ -7,6 +7,6 @@ Beautifully designed Weather Application (100% responsive)
 
 Technologies used : HTML , CSS , Javascript
 
-Concepts : 
+Concepts : Promises , API Calling , DOM Manipulation , gettingCurrentLocation . 
 
-Try it ->  https://saurabh-dev-weather-app-level-1.netlify.app/
+Try it here --> https://saurabh-dev-weather-app-level-1.netlify.app/
