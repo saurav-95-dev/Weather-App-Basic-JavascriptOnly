@@ -23,4 +23,5 @@ Promises , API Calling , DOM Manipulation , gettingCurrentLocation .
 
 ## Contact : 
 
-### Try it -> https://saurabh-dev-weather-app-level-1.netlify.app/
+### Try it :
+https://saurabh-dev-weather-app-level-1.netlify.app/
