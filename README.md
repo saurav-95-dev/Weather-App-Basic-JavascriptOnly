@@ -1,4 +1,4 @@
-### Beautifully designed Weather Application (100% responsive)
+### Beautifully designed Weather Application (100% responsive) Screenshots-->
 
 <img width="316" alt="Screenshot 2024-12-23 at 2 18 15 AM" src="https://github.com/user-attachments/assets/32873ac6-ee51-4b46-a2d6-5f4ea9715419" />
 <img width="317" alt="Screenshot 2024-12-23 at 2 18 47 AM" src="https://github.com/user-attachments/assets/960f4ccd-394d-4167-a2d6-4c3dc67b9d62" />
