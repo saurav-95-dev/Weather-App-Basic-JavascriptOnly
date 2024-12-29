@@ -5,23 +5,23 @@
 <img width="314" alt="Screenshot 2024-12-23 at 2 12 47 AM" src="https://github.com/user-attachments/assets/d363fb3e-74e7-4ee4-9a3f-7a29d6c1b086" />
 
 
-### Project Name : 
+### PROJECT : 
 
-### Acknowledgments : 
+### ACKNOWLEDGEMENTS : 
 
-### Projects Description : 
+### DESCRIPTION : 
 
-### Technologies used: 
+### TECHNOLOGIES : 
 HTML , CSS , Javascript
 
-### Concepts Utilized:
+### CONCEPTS AND BEST PRACTICES :
 Promises , API Calling , DOM Manipulation , gettingCurrentLocation . 
 
-### Usage :
+### USAGE :
 
-### License : 
+### LICENSE : 
 
-### Contact : 
+### CONTACT : 
 
-### Try it :
+### TRY IT :
 https://saurabh-dev-weather-app-level-1.netlify.app/
