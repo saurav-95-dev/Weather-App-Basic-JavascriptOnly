@@ -9,4 +9,8 @@ Technologies used : HTML , CSS , Javascript
 
 Concepts : Promises , API Calling , DOM Manipulation , gettingCurrentLocation . 
 
+Best Practices 
+
 Try it here --> https://saurabh-dev-weather-app-level-1.netlify.app/
+
+
