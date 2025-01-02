@@ -5,23 +5,20 @@
 <img width="314" alt="Screenshot 2024-12-23 at 2 12 47 AM" src="https://github.com/user-attachments/assets/d363fb3e-74e7-4ee4-9a3f-7a29d6c1b086" />
 
 
-#### PROJECT : 
+## Visit my youtube channel : https://www.youtube.com/@sauravdev4757
+## My Twitter : https://x.com/Saurav_dev21
+## My Linkedin : https://www.linkedin.com/in/saurabh-dev-9120aa236/
 
-#### ACKNOWLEDGEMENTS : 
-
-#### DESCRIPTION : 
-
-#### TECHNOLOGIES : 
+#### PROJECT :
+#### ACKNOWLEDGEMENTS :
+#### DESCRIPTION :
+#### TECHNOLOGIES :
 HTML , CSS , Javascript
 
 #### CONCEPTS AND BEST PRACTICES :
-Promises , API Calling , DOM Manipulation , gettingCurrentLocation . 
+Promises , API Calling , DOM Manipulation , gettingCurrentLocation .
 
 #### USAGE :
-
-#### LICENSE : 
-
-#### CONTACT : 
-
+#### LICENSE :
+#### CONTACT :
 #### TRY IT -->
-https://saurabh-dev-weather-app-level-1.netlify.app/
