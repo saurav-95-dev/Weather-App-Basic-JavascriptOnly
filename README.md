@@ -11,10 +11,10 @@
 
 
 #### PROJECT :
-WEATHER FORCAST 
+Weather Forcast 
 
 #### ACKNOWLEDGEMENTS : 
-NONE 
+None
 
 #### DESCRIPTION :
 
@@ -26,5 +26,7 @@ Promises , API Calling , DOM Manipulation , gettingCurrentLocation .
 
 #### USAGE :
 #### LICENSE :
-#### CONTACT :
+#### CONTACT : 
+You can reach out to me at -> devsaurabh086@gmail.com
+
 #### TRY IT -->  https://saurabh-dev-weather-app-level-1.netlify.app/
