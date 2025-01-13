@@ -11,10 +11,15 @@
 
 
 #### PROJECT :
-#### ACKNOWLEDGEMENTS :
+WEATHER FORCAST 
+
+#### ACKNOWLEDGEMENTS : 
+NONE 
+
 #### DESCRIPTION :
+
 #### TECHNOLOGIES :
-HTML , CSS , Javascript
+HTML , CSS , Plane Javascript
 
 #### CONCEPTS AND BEST PRACTICES :
 Promises , API Calling , DOM Manipulation , gettingCurrentLocation .
